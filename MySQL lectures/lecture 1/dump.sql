@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `actors`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `actors` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) DEFAULT NULL,
+  `name` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -47,11 +47,7 @@ DROP TABLE IF EXISTS `actors_films`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `actors_films` (
   `actor_id` int NOT NULL,
-  `film_id` int NOT NULL,
-  UNIQUE KEY `actor_id` (`actor_id`,`film_id`),
-  KEY `fk_film_id` (`film_id`),
-  CONSTRAINT `fk_actor_id` FOREIGN KEY (`actor_id`) REFERENCES `actors` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `fk_film_id` FOREIGN KEY (`film_id`) REFERENCES `films` (`id`) ON DELETE CASCADE
+  `film_id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -73,7 +69,7 @@ DROP TABLE IF EXISTS `directors`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `directors` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) DEFAULT NULL,
+  `name` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -96,11 +92,8 @@ DROP TABLE IF EXISTS `films`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `films` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) DEFAULT NULL,
-  `director_id` int NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_director_id` (`director_id`),
-  CONSTRAINT `fk_director_id` FOREIGN KEY (`director_id`) REFERENCES `directors` (`id`) ON DELETE CASCADE
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -112,6 +105,28 @@ LOCK TABLES `films` WRITE;
 /*!40000 ALTER TABLE `films` DISABLE KEYS */;
 /*!40000 ALTER TABLE `films` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `films_directors`
+--
+
+DROP TABLE IF EXISTS `films_directors`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `films_directors` (
+  `film_id` int NOT NULL,
+  `director_id` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `films_directors`
+--
+
+LOCK TABLES `films_directors` WRITE;
+/*!40000 ALTER TABLE `films_directors` DISABLE KEYS */;
+/*!40000 ALTER TABLE `films_directors` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -122,4 +137,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-02-11 16:31:37
+-- Dump completed on 2022-02-17 20:23:34
