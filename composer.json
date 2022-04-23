@@ -1,0 +1,14 @@
+{
+    "name": "adm1n/my-project.loc",
+    "authors": [
+        {
+            "name": "Svetlana Shmidt",
+            "email": "svetashmidt93@gmail.com"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "*"
+    }
+}
+
+

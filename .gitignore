@@ -1,3 +1,5 @@
 .idea
 index.php
 index.html
+/vendor/
+lecture.js
