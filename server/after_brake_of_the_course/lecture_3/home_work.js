@@ -43,14 +43,18 @@ multiplyNumeric(salaries);
 console.log(salaries);
 
 class Transport {
-    constructor(maxSpeed, wheelAmounts, wheelSize)
-    {
-        this.maxSpeed = maxSpeed;
+    #maxSpeed;
+    constructor(wheelAmounts, wheelSize) {
         this.wheelAmounts = wheelAmounts;
         this.wheelSize = wheelSize;
     }
-    ride()
-    {
+    getMaxSpeed () {
+        return this.#maxSpeed;
+    }
+    setMaxSpeed (value) {
+        this.#maxSpeed = value;
+    }
+    ride () {
         console.log('We are riding')
     };
 }
@@ -59,13 +63,14 @@ class Car extends Transport {
     engineVolume = 4;
     gasTankVolume = 70;
     fuelAmount = 50;
-    consumeFuel()
-    {
+    setMaxSpeed (value) {
+        super.setMaxSpeed(value < 300 ? value : 300);
+    }
+    consumeFuel () {
         this.fuelAmount -= 5;
         console.log('We are consuming fuel');
     }
-    ride()
-    {
+    ride () {
         this.consumeFuel();
         super.ride()
     }
@@ -75,45 +80,56 @@ class Motorbike extends Transport {
     engineVolume = 2;
     gasTankVolume = 20;
     fuelAmount = 15;
-    consumeFuel()
-    {
+    setMaxSpeed (value) {
+        super.setMaxSpeed(value < 150 ? value : 150);
+    }
+    consumeFuel () {
         this.fuelAmount -= 2;
         console.log('We are consuming fuel');
     }
-    ride()
-    {
+    ride () {
         this.consumeFuel();
         super.ride();
     }
 }
 
 class Bicycle extends Transport {
-    pushPedal()
-    {
-        console.log('we are pushing pedals')
+    pushPedal () {
+        console.log('We are pushing pedals')
     }
-    ride()
-    {
+    ride () {
         this.pushPedal();
         super.ride();
     }
 }
 
-let car = new Car(180, 4, 16);
-let motorbike = new Motorbike(100, 2, 14);
-let bicycle = new Bicycle(40, 2, 13);
+let car = new Car(4, 16);
+car.setMaxSpeed(200);
+console.log(car.getMaxSpeed());
 console.log(car);
-car.ride();
+
+let motorbike = new Motorbike(2, 14);
+motorbike.setMaxSpeed(100);
+console.log(motorbike.getMaxSpeed());
 console.log(motorbike);
+
+let bicycle = new Bicycle(2, 13);
+bicycle.setMaxSpeed(45);
+console.log(bicycle.getMaxSpeed());
 console.log(bicycle);
+
+car.ride();
 bicycle.ride();
 
-let car1 = new Car(140, 4, 17);
-let motorbike1 = new Motorbike(90, 2, 12);
-let bicycle1 = new Bicycle(30, 2, 10);
+let car1 = new Car(4, 17);
+car1.setMaxSpeed(400);
+let motorbike1 = new Motorbike(2, 12);
+motorbike1.setMaxSpeed(200);
+let bicycle1 = new Bicycle(2, 10);
+bicycle1.setMaxSpeed(55);
 let arrayOfTransport = [car, car1, motorbike, motorbike1, bicycle, bicycle1];
 
-arrayOfTransport.sort((prev, next) => prev.maxSpeed - next.maxSpeed);
+arrayOfTransport.sort((prev, next) => prev.getMaxSpeed() - next.getMaxSpeed());
 console.log(arrayOfTransport);
 
 Transport.prototype.turnSteeringWheel = function () {
