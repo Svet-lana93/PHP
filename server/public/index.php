@@ -1,40 +1,30 @@
-<?php
-$servername = 'a_level_nix_mysql';
-$database = 'a_level_nix_mysql';
-$username = 'root';
-$password = 'cbece_gead-cebfa';
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if (!$conn) {
-    die('Connection failed: ' . mysqli_connect_error());
-}
-$user = trim($_POST['user'] ?? '');
-$review = trim($_POST['review'] ?? '');
-
-if ($user !== '' && $review !== '') {
-    $sql = 'INSERT INTO `reviews` (`user`, `review`) 
-                VALUES ("' . mysqli_real_escape_string($conn, $user) . '","' . mysqli_real_escape_string($conn, $review) . '")';
-    if (mysqli_query($conn, $sql)) {
-//        echo 'Data added successfully';
-        header('Location: /');
-        mysqli_close($conn);
-        exit;
-    } else {
-        echo 'Error: ' . mysqli_error($conn);
-    }
-}
-
-?>
-
-<h2>Review Form</h2>
-
-<form method="post" action="index.php">
-    <label for="user">Your name</label><br>
-    <input type="text" name="user"><br>
-    <label for="review">Comments</label><br>
-    <textarea name="review"></textarea><br>
-    <button type="submit">Submit</button>
-</form>
-
-<?php
-mysqli_close($conn);
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="ajax.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <form method="post" action="/action_ajax_form.php" id="ajaxForm" style="margin: calc(50vh - 133px) auto auto;width: 300px;">
+                <div class="row gy-2">
+                    <div class="form-group">
+                        <label for="user" class="form-label">Your name</label>
+                        <div id="user" >
+                            <input name="user" class="form-control" type="text" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="review" class="form-label">Comments</label>
+                        <div id="review" >
+                            <textarea name="review" class="form-control" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="formSend" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
