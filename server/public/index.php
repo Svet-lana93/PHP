@@ -6,7 +6,7 @@
     </head>
     <body>
         <div id="container">
-            <form method="post" action="/action_ajax_form.php" id="ajaxForm" style="margin: calc(50vh - 133px) auto auto;width: 300px;">
+            <form method="post" action="/actionAjaxFormReviews.php" id="ajaxForm" style="margin: calc(50vh - 133px) auto auto;width: 300px;">
                 <div class="row gy-2">
                     <div class="form-group">
                         <label for="user" class="form-label">Your name</label>
