@@ -8,6 +8,7 @@
     ],
     "require": {
         "squizlabs/php_codesniffer": "*",
-      "ext-mysqli": "*"
+        "ext-mysqli": "*",
+        "guzzlehttp/guzzle": "^7.4"
     }
 }
