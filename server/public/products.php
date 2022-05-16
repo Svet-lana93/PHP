@@ -38,15 +38,15 @@
                 <tbody>
                     <?php
                     $queryResult = $db->select('products');
-                    foreach($queryResult as $product) {
-                    ?>
+                    foreach ($queryResult as $product) {
+                        ?>
                         <tr class="productTable">
-                            <th scope="row"><?= $product['id']; ?></th>
-                            <td><?= $product['name']; ?></td>
-                            <td><?= $product['price']; ?></td>
-                            <td><?= $product['qty']; ?></td>
+                            <th scope="row"><?php echo $product['id']; ?></th>
+                            <td><?php echo $product['name']; ?></td>
+                            <td><?php echo $product['price']; ?></td>
+                            <td><?php echo $product['qty']; ?></td>
                         </tr>
-                    <?php
+                        <?php
                     }
                     ?>
                 </tbody>

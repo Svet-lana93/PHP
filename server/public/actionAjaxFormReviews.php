@@ -7,5 +7,5 @@ $user = trim($_POST['user'] ?? '');
 $review = trim($_POST['review'] ?? '');
 
 if ($user !== '' && $review !== '') {
-    $sqlResult = $db->insert('reviews',  [$user, $review],'user, review');
+    $db->insert('reviews', ['user' => $user, 'review' => $review]);
 }
