@@ -1,20 +1,17 @@
 <?php
 require_once __DIR__ . '/databaseConnection.php';
 
-/** @var $conn mysqli */
+/** @var $db Database */
 
-$productName = htmlspecialchars(trim($_POST['productName']));
+$productName = trim($_POST['productName']);
 $sort = $_POST['sort'];
 
-$sqlQuery = 'SELECT * FROM products WHERE
-                           LOWER(`name`) LIKE "' . strtolower(mysqli_real_escape_string($conn, $productName))  . '%"
-                            ORDER BY ' . $sort;
-
-if(!($queryResult = mysqli_query($conn, $sqlQuery))) {
-    die('Invalid query: ' . mysqli_error($conn));
+$where = [];
+if(!empty($productName)) {
+    $where['name'] = $productName;
 }
 
-$products = mysqli_fetch_all($queryResult, MYSQLI_ASSOC);
+$queryResult = $db->select('products', $where, [$sort=>'ASC']);
 
 header('Content-Type: application/json');
-echo json_encode($products);
+echo json_encode($queryResult);

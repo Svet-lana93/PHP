@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__ . '/databaseConnection.php';
     /** @var $conn mysqli */
+    /** @var $db mysqli */
 ?>
 
 <!DOCTYPE html>
@@ -36,16 +37,14 @@
                 </thead>
                 <tbody>
                     <?php
-                    $sql = 'SELECT * FROM `products`';
-                    $product = mysqli_query($conn, $sql);
-
-                    while($row = mysqli_fetch_array($product)) {
+                    $queryResult = $db->select('products');
+                    foreach($queryResult as $product) {
                     ?>
                         <tr class="productTable">
-                            <th scope="row"><?= $row['id']; ?></th>
-                            <td><?= $row['name']; ?></td>
-                            <td><?= $row['price']; ?></td>
-                            <td><?= $row['qty']; ?></td>
+                            <th scope="row"><?= $product['id']; ?></th>
+                            <td><?= $product['name']; ?></td>
+                            <td><?= $product['price']; ?></td>
+                            <td><?= $product['qty']; ?></td>
                         </tr>
                     <?php
                     }
@@ -55,7 +54,3 @@
         <div>
     </body>
 </html>
-
-<?php
-        mysqli_close($conn);
-?>
