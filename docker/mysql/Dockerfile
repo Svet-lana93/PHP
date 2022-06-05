@@ -1,2 +1,2 @@
-FROM mysql:5.7
-COPY ./my.cnf /etc/mysql/my.cnf
+FROM mysql:8.0
+#COPY ./my.cnf /etc/mysql/my.cnf

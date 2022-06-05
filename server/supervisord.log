@@ -44,3 +44,325 @@
 2022-04-28 19:24:06,473 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 2022-04-28 19:24:06,476 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
 2022-04-28 19:24:07,734 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-14 15:49:42,056 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-14 15:49:42,056 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-14 15:49:42,056 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-14 15:49:42,056 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-14 15:49:42,056 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-14 15:49:42,056 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-14 15:49:42,056 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-14 15:49:42,056 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-14 15:49:42,056 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-14 15:49:42,384 INFO RPC interface 'supervisor' initialized
+2022-05-14 15:49:42,386 INFO supervisord started with pid 81
+2022-05-14 15:49:43,396 INFO spawned: 'syslogd' with pid 84
+2022-05-14 15:49:43,404 INFO spawned: 'php-fpmd' with pid 85
+2022-05-14 15:49:43,408 INFO spawned: 'apached' with pid 86
+2022-05-14 15:49:43,422 INFO spawned: 'crond' with pid 90
+2022-05-14 15:49:43,438 INFO spawned: 'postfixd' with pid 95
+2022-05-14 15:49:43,443 INFO spawned: 'sshd' with pid 96
+2022-05-14 15:49:43,444 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-14 15:49:43,444 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-14 15:49:43,444 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-14 15:49:43,444 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-14 15:49:43,444 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-14 15:49:45,254 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-21 15:55:31,195 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-21 15:55:31,195 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-21 15:55:31,195 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-21 15:55:31,195 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-21 15:55:31,195 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-21 15:55:31,195 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-21 15:55:31,195 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-21 15:55:31,195 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-21 15:55:31,195 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-21 15:55:31,514 INFO RPC interface 'supervisor' initialized
+2022-05-21 15:55:31,515 INFO supervisord started with pid 80
+2022-05-21 15:55:32,518 INFO spawned: 'syslogd' with pid 83
+2022-05-21 15:55:32,523 INFO spawned: 'php-fpmd' with pid 84
+2022-05-21 15:55:32,528 INFO spawned: 'apached' with pid 85
+2022-05-21 15:55:32,533 INFO spawned: 'crond' with pid 87
+2022-05-21 15:55:32,537 INFO spawned: 'postfixd' with pid 95
+2022-05-21 15:55:32,543 INFO spawned: 'sshd' with pid 96
+2022-05-21 15:55:32,546 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-21 15:55:32,546 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-21 15:55:32,546 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-21 15:55:32,546 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-21 15:55:32,546 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-21 15:55:33,720 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-26 15:53:53,844 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-26 15:53:53,844 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-26 15:53:53,844 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-26 15:53:53,844 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-26 15:53:53,844 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-26 15:53:53,844 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-26 15:53:53,844 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-26 15:53:53,844 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-26 15:53:53,844 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-26 15:53:54,159 INFO RPC interface 'supervisor' initialized
+2022-05-26 15:53:54,159 INFO supervisord started with pid 83
+2022-05-26 15:53:55,164 INFO spawned: 'syslogd' with pid 86
+2022-05-26 15:53:55,169 INFO spawned: 'php-fpmd' with pid 87
+2022-05-26 15:53:55,173 INFO spawned: 'apached' with pid 88
+2022-05-26 15:53:55,177 INFO spawned: 'crond' with pid 89
+2022-05-26 15:53:55,183 INFO spawned: 'postfixd' with pid 97
+2022-05-26 15:53:55,186 INFO spawned: 'sshd' with pid 98
+2022-05-26 15:53:55,188 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-26 15:53:55,188 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-26 15:53:55,189 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-26 15:53:55,189 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-26 15:53:55,189 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-26 15:53:56,755 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-29 19:21:32,978 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-29 19:21:32,978 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-29 19:21:32,978 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-29 19:21:32,978 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-29 19:21:32,978 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-29 19:21:32,978 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-29 19:21:32,978 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-29 19:21:32,978 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-29 19:21:32,978 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-29 19:21:33,303 INFO RPC interface 'supervisor' initialized
+2022-05-29 19:21:33,304 INFO supervisord started with pid 84
+2022-05-29 19:21:34,314 INFO spawned: 'syslogd' with pid 87
+2022-05-29 19:21:34,328 INFO spawned: 'php-fpmd' with pid 88
+2022-05-29 19:21:34,338 INFO spawned: 'apached' with pid 90
+2022-05-29 19:21:34,343 INFO spawned: 'crond' with pid 91
+2022-05-29 19:21:34,360 INFO spawned: 'postfixd' with pid 97
+2022-05-29 19:21:34,373 INFO spawned: 'sshd' with pid 99
+2022-05-29 19:21:34,382 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:21:34,382 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:21:34,382 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:21:34,382 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:21:34,382 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:21:35,596 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-29 19:23:26,259 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-29 19:23:26,259 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-29 19:23:26,260 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-29 19:23:26,260 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-29 19:23:26,260 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-29 19:23:26,260 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-29 19:23:26,260 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-29 19:23:26,260 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-29 19:23:26,260 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-29 19:23:26,567 INFO RPC interface 'supervisor' initialized
+2022-05-29 19:23:26,567 INFO supervisord started with pid 76
+2022-05-29 19:23:27,570 INFO spawned: 'syslogd' with pid 79
+2022-05-29 19:23:27,571 INFO spawned: 'php-fpmd' with pid 80
+2022-05-29 19:23:27,572 INFO spawned: 'apached' with pid 81
+2022-05-29 19:23:27,576 INFO spawned: 'crond' with pid 83
+2022-05-29 19:23:27,577 INFO spawned: 'postfixd' with pid 90
+2022-05-29 19:23:27,579 INFO spawned: 'sshd' with pid 91
+2022-05-29 19:23:27,580 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:23:27,580 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:23:27,580 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:23:27,580 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:23:27,580 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:23:28,635 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-29 19:24:24,681 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-29 19:24:24,681 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-29 19:24:24,681 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-29 19:24:24,681 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-29 19:24:24,681 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-29 19:24:24,681 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-29 19:24:24,681 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-29 19:24:24,681 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-29 19:24:24,681 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-29 19:24:24,989 INFO RPC interface 'supervisor' initialized
+2022-05-29 19:24:24,989 INFO supervisord started with pid 78
+2022-05-29 19:24:25,992 INFO spawned: 'syslogd' with pid 81
+2022-05-29 19:24:25,993 INFO spawned: 'php-fpmd' with pid 82
+2022-05-29 19:24:25,994 INFO spawned: 'apached' with pid 83
+2022-05-29 19:24:25,995 INFO spawned: 'crond' with pid 84
+2022-05-29 19:24:25,997 INFO spawned: 'postfixd' with pid 86
+2022-05-29 19:24:26,000 INFO spawned: 'sshd' with pid 94
+2022-05-29 19:24:26,003 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:24:26,004 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:24:26,004 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:24:26,004 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:24:26,005 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:24:27,073 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-29 19:42:11,811 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-29 19:42:11,812 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-29 19:42:11,812 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-29 19:42:11,812 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-29 19:42:11,812 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-29 19:42:11,812 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-29 19:42:11,812 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-29 19:42:11,812 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-29 19:42:11,812 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-29 19:42:12,123 INFO RPC interface 'supervisor' initialized
+2022-05-29 19:42:12,124 INFO supervisord started with pid 82
+2022-05-29 19:42:13,126 INFO spawned: 'syslogd' with pid 85
+2022-05-29 19:42:13,128 INFO spawned: 'php-fpmd' with pid 86
+2022-05-29 19:42:13,129 INFO spawned: 'apached' with pid 87
+2022-05-29 19:42:13,130 INFO spawned: 'crond' with pid 88
+2022-05-29 19:42:13,132 INFO spawned: 'postfixd' with pid 89
+2022-05-29 19:42:13,134 INFO spawned: 'sshd' with pid 90
+2022-05-29 19:42:13,135 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:42:13,135 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:42:13,135 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:42:13,136 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:42:13,136 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:42:14,411 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-29 19:43:47,013 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-29 19:43:47,013 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-29 19:43:47,013 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-29 19:43:47,013 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-29 19:43:47,013 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-29 19:43:47,013 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-29 19:43:47,013 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-29 19:43:47,013 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-29 19:43:47,013 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-29 19:43:47,320 INFO RPC interface 'supervisor' initialized
+2022-05-29 19:43:47,320 INFO supervisord started with pid 80
+2022-05-29 19:43:48,322 INFO spawned: 'syslogd' with pid 83
+2022-05-29 19:43:48,323 INFO spawned: 'php-fpmd' with pid 84
+2022-05-29 19:43:48,324 INFO spawned: 'apached' with pid 85
+2022-05-29 19:43:48,325 INFO spawned: 'crond' with pid 86
+2022-05-29 19:43:48,327 INFO spawned: 'postfixd' with pid 88
+2022-05-29 19:43:48,328 INFO spawned: 'sshd' with pid 89
+2022-05-29 19:43:48,330 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:43:48,330 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:43:48,330 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:43:48,330 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:43:48,330 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-29 19:43:49,394 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-30 15:59:42,219 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-30 15:59:42,219 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-30 15:59:42,219 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-30 15:59:42,219 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-30 15:59:42,219 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-30 15:59:42,219 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-30 15:59:42,220 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-30 15:59:42,220 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-30 15:59:42,220 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-30 15:59:42,582 INFO RPC interface 'supervisor' initialized
+2022-05-30 15:59:42,582 INFO supervisord started with pid 83
+2022-05-30 15:59:43,586 INFO spawned: 'syslogd' with pid 86
+2022-05-30 15:59:43,587 INFO spawned: 'php-fpmd' with pid 87
+2022-05-30 15:59:43,589 INFO spawned: 'apached' with pid 88
+2022-05-30 15:59:43,590 INFO spawned: 'crond' with pid 89
+2022-05-30 15:59:43,592 INFO spawned: 'postfixd' with pid 90
+2022-05-30 15:59:43,594 INFO spawned: 'sshd' with pid 91
+2022-05-30 15:59:43,601 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 15:59:43,601 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 15:59:43,601 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 15:59:43,601 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 15:59:43,601 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 15:59:45,180 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-30 16:04:42,368 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-30 16:04:42,368 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-30 16:04:42,368 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-30 16:04:42,368 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-30 16:04:42,368 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-30 16:04:42,368 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-30 16:04:42,368 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-30 16:04:42,368 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-30 16:04:42,368 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-30 16:04:42,674 INFO RPC interface 'supervisor' initialized
+2022-05-30 16:04:42,675 INFO supervisord started with pid 80
+2022-05-30 16:04:43,678 INFO spawned: 'syslogd' with pid 83
+2022-05-30 16:04:43,680 INFO spawned: 'php-fpmd' with pid 84
+2022-05-30 16:04:43,681 INFO spawned: 'apached' with pid 85
+2022-05-30 16:04:43,684 INFO spawned: 'crond' with pid 87
+2022-05-30 16:04:43,685 INFO spawned: 'postfixd' with pid 89
+2022-05-30 16:04:43,687 INFO spawned: 'sshd' with pid 95
+2022-05-30 16:04:43,692 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:04:43,692 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:04:43,692 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:04:43,692 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:04:43,692 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:04:44,779 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-30 16:21:27,665 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-30 16:21:27,665 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-30 16:21:27,666 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-30 16:21:27,666 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-30 16:21:27,666 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-30 16:21:27,666 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-30 16:21:27,666 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-30 16:21:27,666 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-30 16:21:27,666 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-30 16:21:27,673 INFO RPC interface 'supervisor' initialized
+2022-05-30 16:21:27,673 INFO supervisord started with pid 77
+2022-05-30 16:21:28,679 INFO spawned: 'syslogd' with pid 80
+2022-05-30 16:21:28,681 INFO spawned: 'php-fpmd' with pid 81
+2022-05-30 16:21:28,684 INFO spawned: 'apached' with pid 82
+2022-05-30 16:21:28,686 INFO spawned: 'crond' with pid 83
+2022-05-30 16:21:28,688 INFO spawned: 'postfixd' with pid 84
+2022-05-30 16:21:28,691 INFO spawned: 'sshd' with pid 91
+2022-05-30 16:21:28,693 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:21:28,693 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:21:28,693 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:21:28,693 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:21:28,693 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 16:21:29,910 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-05-30 17:25:20,896 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-05-30 17:25:20,897 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-05-30 17:25:20,897 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-05-30 17:25:20,897 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-05-30 17:25:20,897 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-05-30 17:25:20,897 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-05-30 17:25:20,897 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-05-30 17:25:20,897 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-05-30 17:25:20,897 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-05-30 17:25:21,209 INFO RPC interface 'supervisor' initialized
+2022-05-30 17:25:21,210 INFO supervisord started with pid 82
+2022-05-30 17:25:22,212 INFO spawned: 'syslogd' with pid 85
+2022-05-30 17:25:22,213 INFO spawned: 'php-fpmd' with pid 86
+2022-05-30 17:25:22,216 INFO spawned: 'apached' with pid 87
+2022-05-30 17:25:22,217 INFO spawned: 'crond' with pid 88
+2022-05-30 17:25:22,218 INFO spawned: 'postfixd' with pid 89
+2022-05-30 17:25:22,220 INFO spawned: 'sshd' with pid 92
+2022-05-30 17:25:22,225 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 17:25:22,226 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 17:25:22,227 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 17:25:22,227 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 17:25:22,228 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-05-30 17:25:23,391 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-02 16:02:27,210 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-02 16:02:27,210 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-06-02 16:02:27,211 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-06-02 16:02:27,211 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-06-02 16:02:27,211 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-06-02 16:02:27,211 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-06-02 16:02:27,211 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-06-02 16:02:27,211 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-06-02 16:02:27,211 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-06-02 16:02:27,555 INFO RPC interface 'supervisor' initialized
+2022-06-02 16:02:27,556 INFO supervisord started with pid 82
+2022-06-02 16:02:28,561 INFO spawned: 'syslogd' with pid 85
+2022-06-02 16:02:28,568 INFO spawned: 'php-fpmd' with pid 86
+2022-06-02 16:02:28,593 INFO spawned: 'apached' with pid 87
+2022-06-02 16:02:28,627 INFO spawned: 'crond' with pid 90
+2022-06-02 16:02:28,653 INFO spawned: 'postfixd' with pid 95
+2022-06-02 16:02:28,661 INFO spawned: 'sshd' with pid 97
+2022-06-02 16:02:28,673 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-02 16:02:28,673 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-02 16:02:28,673 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-02 16:02:28,673 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-02 16:02:28,673 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-02 16:02:29,817 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-06-05 10:55:16,933 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2022-06-05 10:55:16,934 INFO Included extra file "/opt/docker/etc/supervisor.d/apache.conf" during parsing
+2022-06-05 10:55:16,934 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2022-06-05 10:55:16,934 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2022-06-05 10:55:16,934 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2022-06-05 10:55:16,934 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2022-06-05 10:55:16,934 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2022-06-05 10:55:16,934 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2022-06-05 10:55:16,934 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2022-06-05 10:55:17,254 INFO RPC interface 'supervisor' initialized
+2022-06-05 10:55:17,256 INFO supervisord started with pid 80
+2022-06-05 10:55:18,259 INFO spawned: 'syslogd' with pid 83
+2022-06-05 10:55:18,261 INFO spawned: 'php-fpmd' with pid 84
+2022-06-05 10:55:18,265 INFO spawned: 'apached' with pid 85
+2022-06-05 10:55:18,268 INFO spawned: 'crond' with pid 86
+2022-06-05 10:55:18,269 INFO spawned: 'postfixd' with pid 87
+2022-06-05 10:55:18,272 INFO spawned: 'sshd' with pid 88
+2022-06-05 10:55:18,273 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-05 10:55:18,273 INFO success: apached entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-05 10:55:18,273 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-05 10:55:18,274 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-05 10:55:18,274 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2022-06-05 10:55:19,901 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

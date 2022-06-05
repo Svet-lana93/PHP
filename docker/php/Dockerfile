@@ -1,4 +1,4 @@
-FROM webdevops/php-apache-dev:7.4
+FROM webdevops/php-apache-dev:8.0
 WORKDIR /tmp/
 
 COPY ./run_script  /tmp/

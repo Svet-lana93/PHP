@@ -2,3 +2,6 @@
 index.html
 /vendor/
 lecture.js
+/tests/
+/node_modules/
+.env
