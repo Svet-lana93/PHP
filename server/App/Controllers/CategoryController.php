@@ -18,8 +18,7 @@ class CategoryController extends BaseController
 //        $g = new Greeter();
 //        echo $g->greet('Sveta');
 
-//        Logger::error('Hi Sveta');
-//        Logger::error('Hi Sveta');
+//        Logger::error('Hi Svetlana');
     }
 
     public function save()

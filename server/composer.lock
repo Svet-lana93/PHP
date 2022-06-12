@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29628fe70a30d074df61d01308ef7433",
+    "content-hash": "b923da2f94f1a7fa454355a5d9c09f66",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -534,6 +534,98 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+            "name": "shmidt_student/framework",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Svet-lana93/framework.git",
+                "reference": "cdf925ede87bbbabf99e0bbc18d836e2d700315e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Svet-lana93/framework/zipball/cdf925ede87bbbabf99e0bbc18d836e2d700315e",
+                "reference": "cdf925ede87bbbabf99e0bbc18d836e2d700315e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Shmidt\\Framework\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Svetlana Shmidt",
+                    "email": "svetashmidt93@gmail.com"
+                }
+            ],
+            "homepage": "https://github.com/Svet-lana93/framework",
+            "support": {
+                "issues": "https://github.com/Svet-lana93/framework/issues",
+                "source": "https://github.com/Svet-lana93/framework/tree/main"
+            },
+            "time": "2022-06-12T12:25:35+00:00"
+        },
+        {
+            "name": "shmidt_student/logger",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Svet-lana93/logger.git",
+                "reference": "3bfe633163b8b1d55bbc63d0b7aa1569b60023c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Svet-lana93/logger/zipball/3bfe633163b8b1d55bbc63d0b7aa1569b60023c2",
+                "reference": "3bfe633163b8b1d55bbc63d0b7aa1569b60023c2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Shmidt\\Logger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Svetlana Shmidt",
+                    "email": "svetashmidt93@gmail.com"
+                }
+            ],
+            "homepage": "https://github.com/Svet-lana93/logger",
+            "support": {
+                "issues": "https://github.com/Svet-lana93/logger/issues",
+                "source": "https://github.com/Svet-lana93/logger/tree/master"
+            },
+            "time": "2022-06-12T12:13:17+00:00"
+        },
+        {
             "name": "shmidt_student/message",
             "version": "dev-master",
             "source": {
@@ -777,7 +869,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "shmidt_student/message": 20
+        "shmidt_student/message": 20,
+        "shmidt_student/logger": 20,
+        "shmidt_student/framework": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -1,6 +1,6 @@
 <?php
 require_once '../vendor/autoload.php';
-require_once '../packages/shmidt/framework/src/functions.php';
+//require_once '../packages/shmidt/framework/src/functions.php';
 //spl_autoload_register(function ($class) {
 //    print_r($class);
 //
