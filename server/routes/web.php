@@ -1,19 +1,13 @@
 <?php
 use Shmidt\Framework\Router;
 
-//Router::add('^$', [
-//    'controller' => 'App\Controllers\MainController',
-//    'action' => 'index'
-//]);
-//Router::add('^category$', [
-//    'controller' => 'App\Controllers\CategoryController',
-//    'action' => 'index'
-//]);
-//Router::add('article', [
-//    'controller' => 'App\Controllers\ArticleController',
-//    'action' => 'index'
-//]);
+use App\Controllers\MainController;
+use App\Controllers\CategoryController;
+use App\Controllers\ArticleController;
 
-Router::add('^$', [App\Controllers\MainController::class, 'index']);
-Router::add('^category$', [App\Controllers\CategoryController::class,'index']);
-Router::add('article', [App\Controllers\ArticleController::class,'index']);
+Router::add('^$', [MainController::class, 'index']);
+Router::add('^category$', [CategoryController::class, 'index']);
+Router::add('article', [ArticleController::class, 'index']);
+
+Router::add('^category/save$', [CategoryController::class, 'save']);
+Router::add('^category/delete$', [CategoryController::class, 'delete']);

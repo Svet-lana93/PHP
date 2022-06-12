@@ -6,20 +6,21 @@ use Shmidt\Framework\Views\View;
 
 abstract class Controller
 {
-    public $route = [];
-    public $view;
-    public $layout;
-    public $data = [];
+    public array $route = [];
+    public string $view;
+    public array $data = [];
 
-    public function __construct($route)
+    public function __construct(array $route)
     {
         $this->route = $route;
-        $this->view = $route[1];
+        $this->view = $route[1]; //$this->>view = $route['action]
     }
 
-    public function getView()
+    public function view(string $view, array $data = []): bool
     {
-        $viewObj = new View($this->route, 'Category', $this->view);
-        $viewObj->rendor($this->data);
+        $this->view = $view;
+        $viewObj = new View($this->route, $this->view);
+        $viewObj->render($data);
+        return true;
     }
 }

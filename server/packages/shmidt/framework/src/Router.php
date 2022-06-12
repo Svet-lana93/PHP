@@ -4,8 +4,8 @@ namespace Shmidt\Framework;
 
 class Router
 {
-    protected static $routes = [];
-    protected static $route = [];
+    protected static array $routes = [];
+    protected static array $route = [];
 
     public static function add($reg, $route = [])
     {
@@ -24,14 +24,7 @@ class Router
                 $action = self::$route[1];
 
                 if (method_exists($cObj, $action)) {
-                $cObj->$action();
-/*
-*
-*
-* $cObj->getView();
-*
-*
-*/
+                    $cObj->$action();
                 } else {
                     echo 'Медод <b>' . $controller . ' => ' . $action . '</b> не найден';
                 }

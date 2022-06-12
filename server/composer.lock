@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8b95e197b284cd548e8b819d2917c0e",
+    "content-hash": "29628fe70a30d074df61d01308ef7433",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -534,6 +534,52 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+            "name": "shmidt_student/message",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Svet-lana93/message.git",
+                "reference": "ca3148e62bd09fae20432566c39c1e8a99baa5a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Svet-lana93/message/zipball/ca3148e62bd09fae20432566c39c1e8a99baa5a0",
+                "reference": "ca3148e62bd09fae20432566c39c1e8a99baa5a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Shmidt\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Svetlana Shmidt",
+                    "email": "svetashmidt93@gmail.com"
+                }
+            ],
+            "homepage": "https://github.com/Svet-lana93/message",
+            "support": {
+                "issues": "https://github.com/Svet-lana93/message/issues",
+                "source": "https://github.com/Svet-lana93/message/tree/master"
+            },
+            "time": "2022-06-06T19:10:42+00:00"
+        },
+        {
             "name": "squizlabs/php_codesniffer",
             "version": "3.6.2",
             "source": {
@@ -730,7 +776,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "shmidt_student/message": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

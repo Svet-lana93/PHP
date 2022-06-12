@@ -6,9 +6,9 @@ use Shmidt\Framework\DB;
 
 abstract class Model
 {
-    protected $pdo;
+    protected DB $pdo;
     protected $table;
-    protected $pKey = 'id';
+    protected string $pKey = 'id';
 
     public function __construct()
     {
@@ -22,7 +22,7 @@ abstract class Model
         return $this->pdo->query($sql);
     }
 
-    public function where($key, $simb, $search): array
+    public function where(string $key, string $simb, string $search): array
     {
         $table = htmlspecialchars($this->table);
         $key = htmlspecialchars($key);

@@ -6,11 +6,11 @@ use \PDO;
 
 class DB
 {
-    protected  $pdo;
+    protected object $pdo;
     protected static $instance;
 
-    public static $countSql = 0;
-    public static $queries = [];
+    public static int $countSql = 0;
+    public static array $queries = [];
 
     protected function __construct()
     {
@@ -32,7 +32,7 @@ class DB
         return self::$instance;
     }
 
-    public function execute($sql, $params = [])
+    public function execute(string $sql, array $params = []): bool
     {
         self::$countSql++;
         self::$queries[] = $sql;
@@ -40,7 +40,7 @@ class DB
         return $stmt ->execute($params);
     }
 
-    public function query($sql, $param = [])
+    public function query(string $sql, array $param = []): array
     {
         self::$countSql++;
         self::$queries[] = $sql;

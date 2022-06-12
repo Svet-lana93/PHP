@@ -5,3 +5,4 @@ lecture.js
 /tests/
 /node_modules/
 .env
+public/storage
